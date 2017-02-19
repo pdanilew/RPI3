@@ -1,8 +1,12 @@
 #!/bin/bash
 
+# This script reports basic CPU stats.
+# Called with numer param loops given number of times
+
 if [ ! -z "$1" ]
 then
-  if [[ "$1" =~ ^-?[0-9]*[.,]?[0-9]*[eE]?-?[0-9]+$ ]]
+  //[ "$1" =~ ^-?[0-9]*[.,]?[0-9]*[eE]?-?[0-9]+$ ]]
+  if [[ "$1" =~ ^[0-9]+$ ]]
   then
     LIMIT=$1
     interval=0.5
